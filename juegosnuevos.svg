@@ -9,8 +9,14 @@ Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
 <!-- Añadir fondo blanco detrás del texto -->
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+  <!-- Definir esquinas redondeadas -->
+  <defs>
+    <clipPath id="roundedRect">
+      <rect x="0" y="0" width="512" height="512" rx="20" ry="20"/>
+    </clipPath>
+  </defs>
   <!-- Rectángulo blanco -->
-  <rect x="0" y="0" width="5120" height="5120" fill="white"/>
+  <rect x="0" y="0" width="512" height="512" fill="white" clip-path="url(#roundedRect)"/>
   <!-- Imagen roja -->
   <g fill="#FE4043" stroke="none">
     <path d="M0 4980 l0 -141 173 -322 c96 -177 216 -401 267 -497 112 -210 159
